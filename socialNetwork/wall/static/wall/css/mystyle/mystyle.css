@@ -1,0 +1,57 @@
+body{
+	background-color:#fff;
+}
+
+a{
+	text-decoration-style: none;
+}
+.contactinfo{
+	color: #fff;
+}
+.icon{
+	height: 120px;
+	width: 120px;
+}
+.header{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	margin-top: 52px;
+	background-color:#DFDFDF;
+	border-radius: 3px;
+	border-radius-bottom: 0px;
+}
+#x1{
+	text-decoration: none;
+}
+#x1:hover{
+	opacity: 0.8;
+}
+#my-navbar{
+	background-color: #DFDFDF;
+	border: none;
+	border-radius: 3px;
+}
+#my-navbar a:hover {
+	background-color: #365698;
+}
+#my-navbar ul .active a {
+	background-color: #365698;
+}
+.contact{
+	color: #fff;
+	background-color: #365698;
+	padding: 5px;
+}
+
+.social_icons{
+	margin-right: 5px;
+	color: #fff;
+}
+#copyright{
+	color: #fff;
+}
+#footerline{
+	color: #fff;
+	margin-bottom: 53px; 
+}

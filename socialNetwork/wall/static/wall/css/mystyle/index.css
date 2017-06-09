@@ -1,0 +1,16 @@
+#main {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	/*you have to chhange it once you make main content*/
+}
+.carousel-inner>.item {
+          width: 100%;
+
+}
+#eventslist{
+	margin-left: 0px;
+	text-decoration-line: none;
+}
+#eventslist:hover{
+	opacity: 0.6;	
+}
