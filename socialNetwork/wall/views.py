@@ -79,6 +79,7 @@ def movie(request):
 	import urllib2
 	from bs4 import BeautifulSoup
 	movielist=[]
+	resultmovielist=[]
 	page=urllib2.urlopen('http://www.imdb.com/india/top-rated-indian-movies?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2730173942&pf_rd_r=15KNX5D64SZDZ13Y5NYN&pf_rd_s=right-4&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_india_tr_rhs_1').read()
 	soup=BeautifulSoup(page,"lxml")
 	rows=soup.tbody.find_all('tr')
@@ -91,6 +92,9 @@ def movie(request):
 		print span_tag 
 		print a_tag2
 		movielist=movielist+[a_tag,span_tag,a_tag2]
-	context={'movielist':movielist,'movie_title':movie_title}
+	for m in range(1,len(movielist)):
+		if movielist[m] == movie_title:
+			resultmovielist=resultmovielist+[movielist[m],movielist[m+1],movielist[m+2]]
+	context={'resultmovielist':resultmovielist,}
 	return render(request, 'wall/movie.html',context)	
 		
